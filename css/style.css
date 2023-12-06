@@ -1,0 +1,579 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: sans-serif;
+    
+}
+.close_icon{
+    /* cursor: pointer; */
+}
+.close_icon:hover{
+    color: #e91449;
+}
+.edit_margen{
+    margin-left: 60px; 
+    
+}
+body{
+    background-color: #000;
+    /* padding: 0 5px; */
+    overflow-x: hidden;
+}
+.clos__icone{
+    position: fixed;
+    display: block;
+}
+body{
+    color: #fff;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+.padding{
+    padding-top:90px;
+}
+.del_decoration{
+    text-decoration: none;
+}
+#navbar_navaaa{
+    --bs-nav-link-padding-y: 1.5rem;
+}
+.header nav{
+    
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0;
+}
+.contaner{
+    width:80%;
+    margin: auto;
+}
+.d-flex input{
+    border-color: #e91449;
+}
+.d-flex input:checked{
+    box-shadow: #e91449;
+}
+.d-flex input::placeholder{
+    color: #fff;
+}
+.d-flex button{
+    background-color: transparent;
+    border-color: #e91449;
+}
+.d-flex button:hover{
+    background-color: #e91449;
+}
+#BGclo000{
+    background-color: #000;
+    color: #fff;
+    /* height: 100%; */
+}
+#Clofff{
+    color: #fff;
+}
+/*start home content*/
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    position: relative;
+}
+.aboutMy{
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.aboutMy span{
+    color: #e91449;
+    font-size: 20px;
+}
+.aboutMy h1{
+    font-size: 50px;
+    margin: 10px 0;
+}
+.aboutMy p{
+    margin: 20px 0;
+    line-height: 25px;
+}
+.aboutMy button{
+    background-color: transparent;
+    font-size: larger;
+    padding: 10px;
+    border: 1px solid #e91449;
+    border-top-left-radius:20px;
+    border-bottom-right-radius:20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition:  0.5s;
+    /* margin: 0 5px; */
+    margin: 5px 5px;
+}
+.aboutMy button:hover{
+    background-color:#e91449 ;
+    
+    
+    
+}
+.MyImg{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000;
+    width: 100%;
+    height: 100%;
+    z-index: 2500;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+i{
+    font-size: 30px;
+    border-radius: 57%;
+    background-color: transparent;
+    padding: 7px;
+    transition: 0.5s;
+    border: 1px solid #e91449;
+    width: 31px;
+    text-align: center;
+    cursor: pointer;
+}
+i:hover{
+    background-color: #e91449;
+}
+/* .aboutMy .icons{
+    text-align: right;
+    display: flex;
+} */
+
+/*osama esam*/
+.important_child{
+    position:absolute;
+    left: 0;
+    top: 50px;
+    height: 700px;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: #000; 
+    width: 50%;
+    z-index: 3000;
+    transform: scale(0);
+    margin: 50px auto;
+    border-radius: 30px;
+    opacity: 0.9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: transform 0.5s;
+    
+}
+.important_child::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.important_child{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.contaner_skills {
+    width: 100%;
+}
+.section{
+    display: flex;
+    flex-direction: column  ;
+    justify-content: space-around;
+    align-items: center;
+}
+.about_me{
+    width: 80%;
+}
+.proftional_skills{
+    width: 80%;
+}
+.color_sit{
+    color: #e91449;
+    font-size: large;
+}
+.technical_skills , .personal_skills{
+    text-align: center;
+    margin: 10px 0;
+    text-transform: capitalize;
+
+}
+
+.skills .title{
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-bottom: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.skill{
+    padding: 16px 0;
+}
+.skill_bar {
+    height: 14px;
+    width: 95%;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.skill_par{
+    height: 14px;
+    border-radius:5px ;
+    background-color: #e91449d1;
+    position: relative;
+    animation: persntpar 3s ease-out 1s normal ;
+}
+.skill_par::after{
+    content: attr(per);
+    position: absolute;
+    top: -47px;
+    right: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.skill_par::before{
+    content: '';
+    position: absolute;
+    border: 9px solid;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: #ffffff;
+    border-bottom-color: transparent;
+    bottom: 15px;
+    right: 10px;
+    z-index: 5445454;
+    
+}
+@keyframes persntpar{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+/*description*/
+.contanerr{
+    width: 50%;
+    margin: auto;
+    background-color: #370410;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 0px 3px;
+}
+#closeIconeDes{
+    text-align: left;
+    transform: translateY(-10px);
+}
+.small{
+    text-transform: lowercase;
+}
+.description {
+    width: 36%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    border-radius: 30px;
+    transform: scale(0);
+    transition: transform 0.5s;
+    width: 100%;
+    margin: auto;
+}
+.item{
+    
+    display: flex;
+    flex-direction: column;
+}
+.item h2{
+    margin: 0;
+}
+.value{
+
+}
+.close_icone_des{
+    transform: translate(30px,10px);
+}
+.age , .address , .email , .phone , .freelanse{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 15px;
+}
+#age_icon{
+    border: 0;
+    background-color: transparent;
+    cursor:text;
+    width: 100%;
+}
+.age_child , .address_child , .email_child , .phone_child , .freelanse_child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+}
+.about_video{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    z-index: 9000;
+    transform: scale(0);
+    transition: transform 0.5s;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    
+}
+.about_video::-webkit-scrollbar {
+    display: none;
+}
+.about_video .content{
+    line-height: 40px;
+}
+.about_video .content span{
+    font-size: larger;
+    color: #e91449;
+}
+
+.close_icone_video{
+    text-align: left;
+}
+.video{
+
+}
+
+@media screen and (min-device-width: 600px) {
+    .aboutMy .icons{
+        /* width: 25%; */
+        /* text-align: right; */
+        /* left: 15px; */
+        /* position: absolute; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .about_video{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .video{
+        width: 100%;
+        margin: auto;
+    }
+    .content{
+        text-align: center;
+    }
+    .important_child{
+        width: 100%;
+    }
+    .description {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-device-width: 200px) and (max-device-width: 400px){
+    body{
+        
+    }
+    .contaner{
+        width: 100%;
+    }
+    .parent{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .parent .aboutMy{
+        width: 100%;
+        z-index: 545412;
+        text-align: center;
+    }
+
+    .parent .MyImg{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .parent .MyImg img{
+        width: 70%;
+        height: 70%;
+    }
+    .aboutMy .icons{
+        /* width: 25%; */
+        /* text-align: right; */
+        /* left: 15px; */
+        /* position: absolute; */
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+    .about_video{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .video{
+        width: 100%;
+        margin: auto;
+    }
+    .content{
+        text-align: center;
+    }
+    .important_child{
+        width: 100%;
+    }
+    .description {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-device-width: 399px) and (max-device-width: 768px) { 
+    /* STYLES HERE */
+    .contaner{
+        width: 100%;
+    }
+    .parent{
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+    .parent .aboutMy{
+        width: 90%;
+        z-index: 545412;
+        text-align: center;
+        /* background-color: blue; */
+        overflow: hidden;
+    }
+    .parent .MyImg{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .parent .MyImg img{
+        width: 70%;
+        height: 70%;
+    }
+    .aboutMy .icons{
+        /* width: 25%; */
+        /* text-align: right; */
+        /* left: 15px; */
+        /* position: absolute; */
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .about_video{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .content{
+        text-align: center;
+    }
+    .video{
+        margin: auto;
+        width: 100%;
+    }
+    .important_child{
+        width: 100%;
+    }
+    .description {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-device-width: 100px) and (max-device-width: 600px){
+    .content{
+        text-align: left;
+        /* background-color: #e91449; */
+
+    }
+    .description{
+        width: 100%;
+    }
+    .contanerr{
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media screen and (min-device-width: 400px) and (max-device-width: 600px){
+    .parent .MyImg .icons{
+        /* width: 25%; */
+        /* text-align: right; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        /* position: absolute; */
+        
+        
+
+    }
+    .about_video{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .video{
+        width: 100%;
+        margin: auto;
+    }
+    .content{
+        text-align: center;
+    }
+    .important_child{
+        width: 100%;
+    }
+    .description {
+        width: 100%;
+    }
+}
